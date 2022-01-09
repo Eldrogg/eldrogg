@@ -1,0 +1,141 @@
+header {
+  height: 102px;
+  background: linear-gradient(45deg, #A1FFCE, #F9FFD1);
+  height: 100px;
+  border-radius: 30px 30px 30px 30px;
+  border: 6px inset #90EE90;
+  margin-left: 150px;
+}
+
+h1 {
+  text-align: left;
+  font-size: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #265301;
+}
+
+a:visited {
+  color: #265301;
+}
+
+.a1 a:focus {
+  background: #CDFEAA;
+  border-bottom: 1px solid;
+}
+
+.a1 a:hover {
+  background: #CDFEAA;
+  border-bottom: 1px solid;
+}
+
+a:active {
+  color: #CDFEAA;
+}
+.a1 a:active {
+  background: #265301;
+}
+
+.sidebar {
+  height: 100%;
+  width: 140px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 40px 3px 0 6px;
+  border-right: 6px dotted #808000;
+  background: url(side.png);
+  display: block;
+}
+
+main {
+  margin-left: 150px;
+  font-size: 22px;
+  font-family: "Trebuchet MS", "Lucida Sans";
+}
+.a1 {
+  margin-left: 20px;
+}
+.button {
+  font-size: 30px;
+  border: 5px inset #90EE90;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background: #CDFEAA;
+  box-shadow: 4px 9px 23px 1px rgba(0, 0, 0, 0.33) inset,
+              4px 9px 23px 1px rgba(0, 0, 0, 0.33);
+  border-top-right-radius: 30px;
+}
+.button:hover {
+  border: 5px outset #90EE90;
+}
+.button:active {
+  border: 5px outset #90EE90;
+}
+.button a:active {
+  color: #265301;
+}
+.shadow {
+  color: white;
+  text-shadow: 2px 0 1px black, 0 2px 1px black, -2px 0 1px black,
+   0 -2px 1px black, 6px 5px 3px white;
+}
+body {
+  background: #F0FFC0;
+}
+
+.list {
+  font-family: "Trebuchet MS", "Lucida Sans";
+  background: linear-gradient(45deg, #A1FFCE, #F9FFD1);
+  counter-reset: li;
+}
+.list li {
+  padding: 8px 0 25px 0;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  background: #F0FFC0;
+  color: #444;
+  transition: .8s ease-out;
+}
+
+.list li:first-child:hover {
+  border-radius: 0 40px 10px 0;
+}
+.list li:last-child:hover {
+  border-radius: 0 10px 40px 0;
+}
+
+.list li:hover {
+  background: #7FFFD4;
+  border-radius: 0 10px 10px 0;
+  margin-right: 200px;
+}
+.list li:hover:before {
+  transform: rotate(360deg);
+}
+.list li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -35px;
+  top: 50%;
+  background: #8FD4C1;
+  height: 2em;
+  width: 2em;
+  margin-top: -1.3em;
+  line-height: 2em;
+  border: .3em solid white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all .6s ease-out;
+}
+.list li a:active {
+  color: #265301;
+}
